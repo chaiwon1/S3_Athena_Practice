@@ -1,8 +1,10 @@
 <h1>Simple ETL Project</h1>
 
-1. 약 380만개의 `event_data`와 약 20만개의 `attribute_data`가 csv파일로 로컬에 존재하고, 이것을 S3에 업로드 한다.
+1. 약 380만개의 `event_data`와 약 20만개의 `attribution_data`가 csv파일로 로컬에 존재하고, 이것을 S3에 업로드 한다.
 2. S3에서 csv 파일을 읽어들여와 parquet 파일로 변환 후 다시 S3에 적재하는 ETL을 실시한다. 
 3. S3에는 `server_datetime`으로 partitioning 되어있으며, Athena에서 분석쿼리를 실시한다. 
+
+사용스킬 : `Python`, `AWS S3`, `AWS Athena`
 
 <br>
 
